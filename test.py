@@ -226,6 +226,6 @@ if __name__ == "__main__":
 		# Below is the flow the web app is using to determine when action really started
 		# You should look at the notifications until it returns a status JSON like this
 		# {"errorCode":"0","actionNotificationList":[{"actionState":"SUCCEEDED","actionType":"STOP","serviceType":"RBC","errorTitle":null,"errorMessage":null}]}
-		file = open(“output.txt”,”w”)
-		print(CarNetPost(s,url, '/-/emanager/get-emanager'))
-		file.close() 
+		f = open('output.txt', 'w')
+		f.write(print(CarNetPost(s,url, '/-/emanager/get-emanager')))
+		f.close() 
